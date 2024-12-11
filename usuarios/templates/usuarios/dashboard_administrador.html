@@ -1,0 +1,20 @@
+{% extends "usuarios/base_dashboard_administrador.html" %}
+
+{% block content %}
+    <div class="container-fluid text-center" style="height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+        <!-- Título principal grande -->
+        <h1 class="display-1 font-weight-bold text-primary mb-4" style="font-size: 5rem; letter-spacing: 2px;">
+            ¡Bienvenido al Dashboard Administrador!
+        </h1>
+        <!-- Subtítulo grande -->
+        <p class="lead" style="font-size: 2rem; color: #6c757d;">
+            Gestiona usuarios y recursos de la plataforma de manera eficiente.
+        </p>
+        <!-- Botón -->
+        <div class="mt-5">
+            <a href="{% url 'crear_usuario' %}" class="btn btn-primary btn-lg px-5 py-3" style="font-size: 1.5rem; text-transform: uppercase; border-radius: 50px;">
+                Crear Usuario
+            </a>
+        </div>
+    </div>
+{% endblock %}
